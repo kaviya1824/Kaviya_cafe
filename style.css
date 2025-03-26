@@ -1,0 +1,145 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #FADADD; /* Blush Pink Background */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Main Container */
+.main {
+    width: 400px;
+    background:bisque;
+    padding: 20px;
+    border-radius: 10px;
+    color: #9D5C63; /* Deep Rosewood */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on main container */
+.main:hover {
+    transform: scale(1.02);
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #D4A373; /* Muted Gold */
+}
+
+/* Heading */
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #9D5C63; /* Deep Rosewood */
+}
+
+h1 span {
+    color: #ec0d0d; /* Muted Gold */
+}
+
+/* Form Styling */
+.form {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #9c454e; /* Deep Rosewood */
+}
+
+label {
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #D4A373; /* Muted Gold Border */
+    border-radius: 5px;
+    font-size: 16px;
+    background: #FFF1E6; /* Warm Vanilla */
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: 2px solid #D4A373; /* Muted Gold Focus */
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.btnn {
+    width: 100%;
+    padding: 10px;
+    background-color: #9D5C63; /* Deep Rosewood */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btnn:hover {
+    background-color: #6A3941; /* Dark Burgundy */
+    transform: scale(1.05);
+}
+
+/* Social Media Icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icons a {
+    color: #700f19; /* Deep Rosewood */
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.icons a:hover {
+    color: #000000; /* Muted Gold */
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* Sign-up Link */
+.link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link a {
+    color: #9D5C63; /* Deep Rosewood */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.link a:hover {
+    color: #D4A373; /* Muted Gold */
+    text-decoration: underline;
+}

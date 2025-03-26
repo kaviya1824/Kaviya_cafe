@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    margin: 0;
+    padding: 0;
+  
+    /* Flexbox for Centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Container for the form */
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background:rgba(255, 182, 193, 0.8);
+    padding: 20px 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  
+    /* Centering the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #cb327f; /* Bright Pink Button */
+    text-align: center;
+  }
+  
+  /* Contact Info */
+  .contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering form content */
+  }
+  
+  label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box; /* Consistent width with padding */
+  }
+  
+  /* Button Styling */
+  button {
+    margin-top: 20px;
+    padding: 14px;
+    background-color: #ff69b4; /* Bright Pink Button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff1493; /* Darker Pink Hover */
+  }
+  
+  /* Success and Error Messages */
+  #response-msg {
+    margin-top: 15px;
+    color: green;
+    text-align: center;
+  }
+
+  /* Navigation Bar */
+.navbar {
+  background: rgba(196, 124, 134, 0.8);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color:  #800040; /* Deep Pink Text */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover, 
+.navbar ul li a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+  
+  /* ✅ Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1, h2 {
+      font-size: 22px;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+  
+    input, textarea, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

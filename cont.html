@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Coffee With Love</title>
+  <link rel="stylesheet" href="cont.css" />
+</head>
+<body>
+
+  <!-- 🔹 Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cont.html" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <!-- 🔹 Contact Information -->
+    <div class="contact-info">
+      <p><strong>Owner:</strong> Kaviya Kamalanathan</p>
+      <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+      <p><strong>Email:</strong> coffee_with_love@gmail.com</p>
+      <p><strong>Location:</strong> 136 Coffee Street, Roastville, Chennai</p>
+    </div>
+
+    <!-- 🔹 Feedback Form -->
+    <h2>Send Us Your Feedback</h2>
+    <form id="feedback-form">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" autofocus required />
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="response-msg"></p>
+  </div>
+
+ 
+
+  <script src="cont.js"></script>
+</body>
+</html>

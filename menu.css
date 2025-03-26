@@ -1,0 +1,211 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #ffe6f2; /* Light Pink Background */
+  color: #333; /* Dark Text for Contrast */
+  padding-top: 70px; /* Prevent content from hiding under the fixed navbar */
+}
+
+/* Header and Navbar */
+.header {
+  background: rgba(255, 182, 193, 0.8); /* Soft Pink Transparent Background */
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #800040; /* Deep Pink Text */
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff69b4; /* Bright Pink Hover */
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.srch {
+  padding: 8px;
+  border: 1px solid #ff99cc; /* Light Pink Border */
+  border-radius: 20px;
+  outline: none;
+}
+
+.btn {
+  background-color: #ff69b4; /* Bright Pink Button */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff1493; /* Darker Pink Hover */
+}
+
+/* Coffee Gallery */
+.coffee-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Coffee Item */
+.coffee-item {
+  background: #ffc0cb; /* Soft Pink Box */
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.coffee-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #d63384; /* Dark Pink */
+}
+
+.price {
+  font-size: 16px;
+  color: #800040; /* Deep Pink */
+}
+
+.coffee-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(255, 20, 147, 0.3);
+}
+
+/* ========================================= */
+/* Responsive Design for Mobile & Tablet */
+/* ========================================= */
+
+.menu-toggle {
+  display: none; /* Hidden by default on larger screens */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #800040; /* Deep Pink */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block; /* Now visible in mobile mode */
+    margin-right: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none; /* Initially hidden */
+    background: rgba(249, 150, 165, 0.9); /* Soft Pink Transparent */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .search-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-toggle {
+    font-size: 24px;
+    display: block;
+    margin-right: auto;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .search-box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
